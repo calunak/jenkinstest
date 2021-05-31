@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Build') {
             steps {
-                sh "cat /etc/passwd"
+                echo 'Building the application...'
             }
         }
     }
